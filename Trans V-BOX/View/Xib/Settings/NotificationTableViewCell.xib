@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="YuGothB.ttc">
+            <string>YuGothic-Bold</string>
+        </array>
+        <array key="YuGothR.ttc">
+            <string>YuGothic-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="Rin-2q-RJe" customClass="NotificationTableViewCell" customModule="Trans_V_BOX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rin-2q-RJe" id="lYQ-TW-Tfx">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Notification 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uo-89-KMH">
+                        <rect key="frame" x="20" y="10" width="186" height="11.5"/>
+                        <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="17"/>
+                        <color key="textColor" red="0.32549019610000002" green="0.36470588240000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaI-Ls-ZOB">
+                        <rect key="frame" x="20" y="32.5" width="294" height="14.5"/>
+                        <fontDescription key="fontDescription" name="YuGothic-Regular" family="Yu Gothic" pointSize="13"/>
+                        <color key="textColor" red="0.32549019610000002" green="0.36470588240000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="17 May, 4:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-Ul-qJE">
+                        <rect key="frame" x="214" y="10" width="100" height="14.5"/>
+                        <fontDescription key="fontDescription" name="YuGothic-Regular" family="Yu Gothic" pointSize="13"/>
+                        <color key="textColor" red="0.32549019610000002" green="0.36470588240000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUz-4I-Apg">
+                        <rect key="frame" x="0.0" y="65" width="334" height="1"/>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.73333333329999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="XMn-IK-Lx5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YaI-Ls-ZOB" firstAttribute="leading" secondItem="4Uo-89-KMH" secondAttribute="leading" id="0Z1-Zh-V6D"/>
+                    <constraint firstItem="YaI-Ls-ZOB" firstAttribute="top" secondItem="4Uo-89-KMH" secondAttribute="bottom" constant="11" id="D6Q-Uk-0rr"/>
+                    <constraint firstAttribute="bottom" secondItem="mUz-4I-Apg" secondAttribute="bottom" id="JzW-wK-Ybk"/>
+                    <constraint firstAttribute="trailing" secondItem="YaI-Ls-ZOB" secondAttribute="trailing" constant="20" id="Qyj-Av-iPZ"/>
+                    <constraint firstAttribute="trailing" secondItem="mUz-4I-Apg" secondAttribute="trailing" id="RsY-Xs-iZH"/>
+                    <constraint firstItem="mUz-4I-Apg" firstAttribute="leading" secondItem="lYQ-TW-Tfx" secondAttribute="leading" id="XU5-Mn-SCe"/>
+                    <constraint firstAttribute="trailing" secondItem="cdc-Ul-qJE" secondAttribute="trailing" constant="20" id="h4s-DY-7xe"/>
+                    <constraint firstItem="4Uo-89-KMH" firstAttribute="leading" secondItem="lYQ-TW-Tfx" secondAttribute="leading" constant="20" id="kN2-8h-9ZN"/>
+                    <constraint firstItem="mUz-4I-Apg" firstAttribute="top" secondItem="YaI-Ls-ZOB" secondAttribute="bottom" constant="18" id="oPW-P7-tTT"/>
+                    <constraint firstItem="4Uo-89-KMH" firstAttribute="top" secondItem="lYQ-TW-Tfx" secondAttribute="top" constant="10" id="q0s-fF-hFI"/>
+                    <constraint firstItem="cdc-Ul-qJE" firstAttribute="top" secondItem="4Uo-89-KMH" secondAttribute="top" id="th0-zk-s0q"/>
+                    <constraint firstItem="cdc-Ul-qJE" firstAttribute="leading" secondItem="4Uo-89-KMH" secondAttribute="trailing" constant="8" id="vkX-zP-eZC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Cq2-rK-pwF"/>
+            <connections>
+                <outlet property="dateLabel" destination="cdc-Ul-qJE" id="Mq8-Yh-Dwo"/>
+                <outlet property="descLabel" destination="YaI-Ls-ZOB" id="mFK-M8-WVK"/>
+                <outlet property="nameLabel" destination="4Uo-89-KMH" id="7Rc-qZ-gSG"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="113.83928571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

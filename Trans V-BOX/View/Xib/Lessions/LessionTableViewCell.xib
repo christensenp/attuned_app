@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="YuGothB.ttc">
+            <string>YuGothic-Bold</string>
+        </array>
+        <array key="YuGothM.ttc">
+            <string>YuGothic-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="LessionTableViewCell" customModule="Trans_V_BOX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="446" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJo-NH-zIN">
+                        <rect key="frame" x="30" y="0.0" width="386" height="103"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Lession 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwm-xZ-52p">
+                                <rect key="frame" x="19" y="24" width="83.5" height="20"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="18"/>
+                                <color key="textColor" red="0.15686274509803921" green="0.19607843137254902" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 5 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meX-g8-2DB">
+                                <rect key="frame" x="19" y="52" width="83.5" height="27"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Medium" family="Yu Gothic" pointSize="13"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1c-5u-ZTk">
+                                <rect key="frame" x="324" y="31.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="fC3-lF-SXY"/>
+                                    <constraint firstAttribute="height" constant="40" id="sj9-sI-LIi"/>
+                                </constraints>
+                                <state key="normal" image="#FEE9E3"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.9137254901960784" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="meX-g8-2DB" firstAttribute="trailing" secondItem="Fwm-xZ-52p" secondAttribute="trailing" id="A21-sz-ZbK"/>
+                            <constraint firstItem="N1c-5u-ZTk" firstAttribute="centerY" secondItem="tJo-NH-zIN" secondAttribute="centerY" id="Inv-eL-KIc"/>
+                            <constraint firstItem="meX-g8-2DB" firstAttribute="top" secondItem="Fwm-xZ-52p" secondAttribute="bottom" constant="8" id="OIw-jm-QCZ"/>
+                            <constraint firstItem="Fwm-xZ-52p" firstAttribute="leading" secondItem="tJo-NH-zIN" secondAttribute="leading" constant="19" id="Zmg-HS-HAp"/>
+                            <constraint firstAttribute="trailing" secondItem="N1c-5u-ZTk" secondAttribute="trailing" constant="22" id="iSx-cW-9jk"/>
+                            <constraint firstAttribute="bottom" secondItem="meX-g8-2DB" secondAttribute="bottom" constant="24" id="ieM-Df-mbU"/>
+                            <constraint firstItem="Fwm-xZ-52p" firstAttribute="top" secondItem="tJo-NH-zIN" secondAttribute="top" constant="24" id="jgu-M6-RJa"/>
+                            <constraint firstItem="meX-g8-2DB" firstAttribute="leading" secondItem="Fwm-xZ-52p" secondAttribute="leading" id="rgQ-FG-iVQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tJo-NH-zIN" secondAttribute="trailing" constant="30" id="7de-v6-ADf"/>
+                    <constraint firstAttribute="bottom" secondItem="tJo-NH-zIN" secondAttribute="bottom" constant="20" id="TOz-Kb-zu4"/>
+                    <constraint firstItem="tJo-NH-zIN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="TwV-Pf-wcC"/>
+                    <constraint firstItem="tJo-NH-zIN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kIu-mC-csk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="tJo-NH-zIN" id="8nh-Vj-anC"/>
+                <outlet property="lessionNameLabel" destination="Fwm-xZ-52p" id="hDC-SS-QvV"/>
+                <outlet property="playButton" destination="N1c-5u-ZTk" id="pcB-Ji-HhS"/>
+                <outlet property="timeLabel" destination="meX-g8-2DB" id="ULD-ns-vIA"/>
+            </connections>
+            <point key="canvasLocation" x="221.73913043478262" y="110.82589285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="#FEE9E3" width="40" height="40"/>
+    </resources>
+</document>

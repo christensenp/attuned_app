@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="YuGothR.ttc">
+            <string>YuGothic-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Recordings-->
+        <scene sceneID="4gp-Wi-ug9">
+            <objects>
+                <viewController storyboardIdentifier="RecordingsViewController" title="My Recordings" id="uSV-Bj-BVS" customClass="RecordingsViewController" customModule="Trans_V_BOX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="low-1E-kEq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="y9D-A3-LFf">
+                                <rect key="frame" x="20" y="93" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="z1l-4u-2Ck"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EM-VK-Knw">
+                                <rect key="frame" x="0.0" y="157" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.73725490196078436" green="0.73333333333333328" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="bpp-eT-wfO"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wXP-zJ-7YI">
+                                <rect key="frame" x="0.0" y="158" width="414" height="655"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="uSV-Bj-BVS" id="j96-Kt-WNN"/>
+                                    <outlet property="delegate" destination="uSV-Bj-BVS" id="VBV-iv-qIc"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Recordings Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8A-Xr-4IX">
+                                <rect key="frame" x="123" y="438.5" width="168" height="19"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Regular" family="Yu Gothic" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1EM-VK-Knw" firstAttribute="top" secondItem="y9D-A3-LFf" secondAttribute="bottom" constant="20" id="6h0-QY-mKN"/>
+                            <constraint firstItem="y9D-A3-LFf" firstAttribute="top" secondItem="t9C-01-Kfh" secondAttribute="top" constant="5" id="PYx-Ed-fhL"/>
+                            <constraint firstAttribute="trailing" secondItem="y9D-A3-LFf" secondAttribute="trailing" constant="20" id="SlS-1v-sw1"/>
+                            <constraint firstItem="wXP-zJ-7YI" firstAttribute="trailing" secondItem="t9C-01-Kfh" secondAttribute="trailing" id="T7V-sb-xhS"/>
+                            <constraint firstItem="wXP-zJ-7YI" firstAttribute="top" secondItem="1EM-VK-Knw" secondAttribute="bottom" id="dZg-XR-woP"/>
+                            <constraint firstItem="y9D-A3-LFf" firstAttribute="leading" secondItem="t9C-01-Kfh" secondAttribute="leading" constant="20" id="dbR-G7-dEB"/>
+                            <constraint firstItem="o8A-Xr-4IX" firstAttribute="centerY" secondItem="low-1E-kEq" secondAttribute="centerY" id="dcN-Dj-vM0"/>
+                            <constraint firstItem="t9C-01-Kfh" firstAttribute="trailing" secondItem="1EM-VK-Knw" secondAttribute="trailing" id="qnr-i1-QFd"/>
+                            <constraint firstItem="o8A-Xr-4IX" firstAttribute="centerX" secondItem="low-1E-kEq" secondAttribute="centerX" id="wY7-Wq-o3G"/>
+                            <constraint firstItem="1EM-VK-Knw" firstAttribute="leading" secondItem="t9C-01-Kfh" secondAttribute="leading" id="xBi-2f-6zS"/>
+                            <constraint firstItem="wXP-zJ-7YI" firstAttribute="bottom" secondItem="t9C-01-Kfh" secondAttribute="bottom" id="xCq-SO-KQi"/>
+                            <constraint firstItem="wXP-zJ-7YI" firstAttribute="leading" secondItem="t9C-01-Kfh" secondAttribute="leading" id="xyT-yi-XRf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t9C-01-Kfh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recordings" image="recording_off" selectedImage="recordings" id="l3S-JB-xe3"/>
+                    <navigationItem key="navigationItem" id="bA8-kp-lSz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="y9D-A3-LFf" id="PFJ-o3-nad"/>
+                        <outlet property="tableView" destination="wXP-zJ-7YI" id="gb6-ze-RLD"/>
+                        <outlet property="warningLabel" destination="o8A-Xr-4IX" id="78B-Xp-xT4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpm-uO-k3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3uG-Nj-HDs">
+            <objects>
+                <navigationController storyboardIdentifier="RecordingsNav" automaticallyAdjustsScrollViewInsets="NO" id="fPr-mX-NGN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bDh-2W-qPY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uSV-Bj-BVS" kind="relationship" relationship="rootViewController" id="9y7-Q4-LWd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mQ-MR-oS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="recording_off" width="23" height="23"/>
+        <image name="recordings" width="21" height="23"/>
+    </resources>
+</document>

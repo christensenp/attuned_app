@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="YuGothB.ttc">
+            <string>YuGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="LessionsUserTableViewCell" customModule="Trans_V_BOX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOH-Rl-75h">
+                        <rect key="frame" x="29" y="20" width="251" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vm7-Y3-IMi">
+                                <rect key="frame" x="0.0" y="0.0" width="251" height="24.5"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="15"/>
+                                <color key="textColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Richard George" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2I-NE-71J">
+                                <rect key="frame" x="0.0" y="32.5" width="251" height="25.5"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="23"/>
+                                <color key="textColor" red="0.32549019607843138" green="0.36470588235294116" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H2I-NE-71J" firstAttribute="trailing" secondItem="Vm7-Y3-IMi" secondAttribute="trailing" id="4GZ-4z-Ex0"/>
+                            <constraint firstItem="H2I-NE-71J" firstAttribute="leading" secondItem="Vm7-Y3-IMi" secondAttribute="leading" id="6FV-XI-H5g"/>
+                            <constraint firstItem="Vm7-Y3-IMi" firstAttribute="leading" secondItem="EOH-Rl-75h" secondAttribute="leading" id="Iys-Sg-qas"/>
+                            <constraint firstItem="Vm7-Y3-IMi" firstAttribute="top" secondItem="EOH-Rl-75h" secondAttribute="top" id="KvM-A4-Ho7"/>
+                            <constraint firstAttribute="bottom" secondItem="H2I-NE-71J" secondAttribute="bottom" id="efR-IJ-vNN"/>
+                            <constraint firstAttribute="trailing" secondItem="Vm7-Y3-IMi" secondAttribute="trailing" id="l2X-wP-uv5"/>
+                            <constraint firstItem="H2I-NE-71J" firstAttribute="top" secondItem="Vm7-Y3-IMi" secondAttribute="bottom" constant="8" id="raO-ZA-LBA"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add Picture" translatesAutoresizingMaskIntoConstraints="NO" id="g5t-LL-VBj">
+                        <rect key="frame" x="288" y="21.5" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="KOh-xx-Yt8"/>
+                            <constraint firstAttribute="height" constant="55" id="ccP-n1-evO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="27.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EOH-Rl-75h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="24A-aH-U7Q"/>
+                    <constraint firstItem="EOH-Rl-75h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="Oay-Yk-qAj"/>
+                    <constraint firstItem="g5t-LL-VBj" firstAttribute="centerY" secondItem="EOH-Rl-75h" secondAttribute="centerY" id="hbR-q1-14u"/>
+                    <constraint firstAttribute="bottom" secondItem="EOH-Rl-75h" secondAttribute="bottom" constant="18" id="lcL-94-XqU"/>
+                    <constraint firstAttribute="trailing" secondItem="g5t-LL-VBj" secondAttribute="trailing" constant="30" id="n2Y-rX-Olf"/>
+                    <constraint firstItem="g5t-LL-VBj" firstAttribute="leading" secondItem="EOH-Rl-75h" secondAttribute="trailing" constant="8" id="uX1-Ir-Yfb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="profileImageView" destination="g5t-LL-VBj" id="9o6-TL-viG"/>
+                <outlet property="userNameLabel" destination="H2I-NE-71J" id="VlM-kf-BU6"/>
+            </connections>
+            <point key="canvasLocation" x="319.56521739130437" y="-16.071428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Add Picture" width="70" height="70"/>
+    </resources>
+</document>
