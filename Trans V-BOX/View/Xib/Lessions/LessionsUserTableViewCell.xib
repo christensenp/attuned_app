@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,19 +27,19 @@
                         <rect key="frame" x="29" y="20" width="251" height="58"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vm7-Y3-IMi">
-                                <rect key="frame" x="0.0" y="0.0" width="251" height="24.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="251" height="24"/>
                                 <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="15"/>
                                 <color key="textColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Richard George" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2I-NE-71J">
-                                <rect key="frame" x="0.0" y="32.5" width="251" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Your Name Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2I-NE-71J">
+                                <rect key="frame" x="0.0" y="32" width="251" height="26"/>
                                 <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="23"/>
                                 <color key="textColor" red="0.32549019607843138" green="0.36470588235294116" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="H2I-NE-71J" firstAttribute="trailing" secondItem="Vm7-Y3-IMi" secondAttribute="trailing" id="4GZ-4z-Ex0"/>
                             <constraint firstItem="H2I-NE-71J" firstAttribute="leading" secondItem="Vm7-Y3-IMi" secondAttribute="leading" id="6FV-XI-H5g"/>
@@ -76,10 +77,13 @@
                 <outlet property="profileImageView" destination="g5t-LL-VBj" id="9o6-TL-viG"/>
                 <outlet property="userNameLabel" destination="H2I-NE-71J" id="VlM-kf-BU6"/>
             </connections>
-            <point key="canvasLocation" x="319.56521739130437" y="-16.071428571428569"/>
+            <point key="canvasLocation" x="163" y="53"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="Add Picture" width="70" height="70"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
