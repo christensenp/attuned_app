@@ -138,8 +138,8 @@ class PainoView: UIView {
             view.startPoint = CGPoint(x: 0.5, y: 0)
             view.endPoint = CGPoint(x: 0.5, y: 1)
             if view.tag == value {
-                view.firstColor = isIdealView(view: view) ?  UIColor.colorWithRGB(r: 92, g: 184, b: 135) : UIColor.colorWithRGB(r: 163, g: 149, b: 228)
-                view.secondColor = isIdealView(view: view) ? UIColor.colorWithRGB(r: 138, g: 210, b: 172) : UIColor.colorWithRGB(r: 194, g: 183, b: 245)
+                view.firstColor = isIdealView(view: view) ?  UIColor.colorWithRGB(r: 255, g: 111, b: 59) : UIColor.colorWithRGB(r: 163, g: 149, b: 228)
+                view.secondColor = isIdealView(view: view) ? UIColor.colorWithRGB(r: 250, g: 135, b: 82) : UIColor.colorWithRGB(r: 194, g: 183, b: 245)
             } else {
                 view.firstColor = isBlackKey(view: view) ? topBlackKeyColor : topWhiteKeyColor
                 view.secondColor = isBlackKey(view: view) ? bottomBlackKeyColor : bottomWhiteKeyColor
