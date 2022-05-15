@@ -64,6 +64,11 @@ class EditProfileViewController: BaseViewController {
         var param: [String: Any] = [APIKeys.admin: "0", APIKeys.name: nameTextField.text!.trim()]
         if imageSelected {
             param[APIKeys.image] =  profileImageView.image!.jpegData(compressionQuality: 0.5)
+        }else{
+            guard let user = UserSession.shared.user?.data else { return }
+            if user.userImage == "" {
+                param[APIKeys.image] =  profileImageView.image!.jpegData(compressionQuality: 0.5)
+            }
         }
         APIManager.shared.editProfile(param: param) { [unowned self] (response, status, error) -> (Void) in
             self.stopLoading()
