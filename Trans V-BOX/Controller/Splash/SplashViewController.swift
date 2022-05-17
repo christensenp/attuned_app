@@ -14,12 +14,14 @@ class SplashViewController: BaseViewController {
     static var storyBoardName: String = Storyboard.main
 
     override func viewDidLoad() {
+//        playVideo(from: "Splash.mp4")
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnd), name:
         NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
 
         // Do any additional setup after loading the view.
         playVideo(from: "Splash.mp4")
+        triggerLocalNotification(title:"Attuned")
     }
     
     private func playVideo(from file:String) {
@@ -54,5 +56,32 @@ class SplashViewController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    private func triggerLocalNotification(title: String){
 
+        let content = UNMutableNotificationContent()
+        content.title=title
+        content.sound = .default
+        content.subtitle="Start where you left off"
+        
+        var dateComponent = DateComponents()
+        dateComponent.hour = 10
+        dateComponent.minute = 00
+
+//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: true)
+        
+        let localN = UNNotificationRequest(identifier: "local notification", content: content, trigger: trigger)
+
+
+        UNUserNotificationCenter.current().add(localN){(error) in
+            if let error = error {
+                print("Eroor: ", error.localizedDescription)
+            }
+            else{
+                NSLog("Notification Scheduled")
+            }
+        }
+
+    }
+    
 }
